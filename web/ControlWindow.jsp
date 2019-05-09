@@ -123,7 +123,7 @@
         <ul class="nav navbar-nav">
             <li><a href="/diaryf">Главная</a></li>
             <li><a href="/diary">Дневник</a></li>
-            <li><a href="#">Статистика</a></li>
+            <li><a href="/diadramm">Статистика</a></li>
             <li><a href="/change">Личный кабинет</a></li>
             <li class="active"><a href="/control">Добавить блюдо</a></li>
             <li><a href="/">Выйти</a></li>
