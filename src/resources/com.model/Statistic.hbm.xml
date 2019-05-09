@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hiberanate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping xmlns="http://www.hibernate.org/xsd/hibernate-mapping">
+    <class name="com.model.Statistic" table="statistic">
+        <id name="id" column="id" />
+        <property name="login" column="login" />
+        <property name="date" column="date" />
+        <property name="currCal" column="currCal"/>
+        <property name="currFats" column="currFats"/>
+        <property name="currProteins" column="currProteins"/>
+        <property name="currCarbohydrates" column="currCarbohydrates"/>
+    </class>
+</hibernate-mapping>

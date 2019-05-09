@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hiberanate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping xmlns="http://www.hibernate.org/xsd/hibernate-mapping">
+    <class name="com.model.User_data" table="users_data">
+        <id name="login" />
+        <property name="age" column="age"/>
+        <property name="mail" column="mail"/>
+        <property name="height" column="height"/>
+        <property name="weight" column="weight"/>
+        <property name="normCal" column="normKal"/>
+        <property name="normFats" column="normFats"/>
+        <property name="normProteins" column="normProteins"/>
+        <property name="normCarbohydrates" column="normCarbohydrates"/>
+    </class>
+</hibernate-mapping>
