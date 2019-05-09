@@ -149,6 +149,12 @@
     </nav>
 </div>
 <div class="container">
+    <form action="/table" method="get" class="form-group">
+        <input type="submit" class="btn btn-default" value="Список блюд">
+    </form>
+</div>
+<div class="container">
+    <p></p>
     <form method="post" action="/diary" class="form-horizontal">
         <div class="row">
             <div class="col-md-3">

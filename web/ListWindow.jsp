@@ -10,7 +10,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Дневник</title>
+    <title>Список блюд</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -131,23 +131,35 @@
     </nav>
 </div>
 <div class="container">
-    <form action="/table" method="post">
-        <input type="text" placeholder="foodname" name="foodName">
-        <input type="submit" value="Поиск">
-    </form>
-</div>
-<div class="container-fluid">
-    <table border="4px solid grey">
-        <tr><!-- ЛИМА, ЭТО НАДО ДЕЛАТЬ ТЕГАМИ th, ТАК КАК ЭТО ЗАГОЛОВКИ
-        ТАК ИХ И СТИЛИЗОВАТЬ БУДЕТ ЛЕГЧЕ-->
-            <td>Блюдо</td>
-            <td>Калории</td>
-            <td>Жиры</td>
-            <td>Белки</td>
-            <td>Углеводы</td>
-        </tr>
-        ${requestScope.data}
-    </table>
+    <div class="form-horizontal">
+        <form action="/table" method="post">
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-md-3">
+                        <p></p>
+                        <input type="text" placeholder="Название блюда" class="form-control" name="foodName">
+                    </div><div class="col-md-1">
+                    <p></p>
+                    <input type="submit" class="btn btn-default" value="Поиск">
+                </div>
+                </div>
+            </div>
+        </form>
+        <div class="container">
+            <table class="table table-bordered">
+                <thead>
+                <tr>
+                    <th>Блюдо</th>
+                    <th>Калории</th>
+                    <th>Жиры</th>
+                    <th>Белки</th>
+                    <th>Углеводы</th>
+                </tr>
+                </thead>
+                <p class="help-block">${requestScope.data}</p>
+            </table>
+        </div>
+    </div>
 </div>
 </body>
 </html>
