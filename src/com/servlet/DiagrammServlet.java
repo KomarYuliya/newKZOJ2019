@@ -24,11 +24,15 @@ public class DiagrammServlet extends HttpServlet {
             out.println("<head>");
             out.println("<meta charset=\"UTF-8\">");
             out.println("<title>Статистика</title>");
+            out.println("<style>");
+            out.println(".displayed{display:block; margin-left:auto; margin-right:auto}");
+            out.println("</style>");
             out.println("</head>");
             out.println("<body>");
             out.println("<H2>Статистика</H2>");
             out.println("<P>");
-            out.println("<IMG SRC=\"generate\" BORDER=1 WIDTH=600 HEIGHT=400/>");
+            out.println("<IMG class=displayed SRC=\"generate\" BORDER=1 WIDTH=600 HEIGHT=400/>");
+            out.println("</P>");
             out.println("</body>");
             out.println("</html>");
 
