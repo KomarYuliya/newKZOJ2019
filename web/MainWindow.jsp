@@ -150,7 +150,7 @@
         <ul class="nav navbar-nav">
             <li class="active"><a href="/diaryf">Главная</a></li>
             <li><a href="/diary">Дневник</a></li>
-            <li><a href="#">Статистика</a></li>
+            <li><a href="/diadramm">Статистика</a></li>
             <li><a href="/change">Личный кабинет</a></li>
             <li><a href="/control">Добавить блюдо</a></li>
             <li><a href="/">Выйти</a></li>
